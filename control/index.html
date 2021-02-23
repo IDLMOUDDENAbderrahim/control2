@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form valide</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+
+    <div class="container">
+                <div id="reponse"></div>
+            <h1>Sign Up </h1>
+            <form action="#">
+                <label for="email">Email : </label>
+                <input type="text" id="email"><br>
+                <label for="pwd">Password : </label>
+                <input type="text" id="pwd"><br>
+                <div class="file">
+                    <h3> Filie : </h3>
+                    <input name="file"type="checkbox" id="tdi"><label for="tdi">TDI</label><br>
+                    <input name="file" type="checkbox" id="tri"><label for="tri">TRI</label><br>
+                    <input  name="file"type="checkbox" id="tsm"><label for="tsm">TSM</label><br>
+                </div>
+                <label for="ville">Ville : </label>
+                <select name="ville" id="ville">
+                    <option value="0" disabled=disabled >Selection</option>
+                    <option value="1">Beni Mellal</option>
+                    <option value="2">Rabat</option>
+                    <option value="3">Fes</option>
+                </select><br>
+
+                
+                <button onclick="valide();">Valide</button>
+                <button>OnVoyer a Ajax</button>
+                
+            </form>
+            <div id="message"></div>
+
+    </div>
+
+    
+
+    <script src="JS/valide.js"></script>
+
+
+</body>
+</html>
